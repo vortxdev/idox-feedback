@@ -1,0 +1,35 @@
+name: Zgłoszenie problemu
+description: Błąd w serwisie, nieaktualna treść lub problem z generatorem
+title: "[Problem]: "
+labels: ["problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie.
+
+        **Nie wklejaj** danych wpisanych w formularzu, treści wygenerowanego PDF ani danych osobowych, jeżeli nie są konieczne do opisania problemu.
+  - type: input
+    id: page_url
+    attributes:
+      label: Adres strony
+      description: Strona, na której wystąpił problem (bez parametrów z danymi formularza).
+      placeholder: https://wygenerujdokument.pl/kreator/...
+    validations:
+      required: true
+  - type: input
+    id: document_name
+    attributes:
+      label: Nazwa dokumentu
+      description: Wypełniane automatycznie na stronach kreatora; poza nimi możesz zostawić puste.
+      placeholder: np. Wniosek urlopowy
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Opis problemu
+      description: Co jest nie tak i czego oczekiwałeś?
+      placeholder: Opisz problem możliwie konkretnie…
+    validations:
+      required: true
