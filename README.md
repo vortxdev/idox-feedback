@@ -1,17 +1,17 @@
-# idox-reports
+# idox-feedback
 
-Publiczne zgłoszenia problemów serwisu **[Wygeneruj Dokument](https://wygenerujdokument.pl)** (`wygenerujdokument.pl`).
+Publiczne zgłoszenia uwag i pomysłów do serwisu **[Wygeneruj Dokument](https://wygenerujdokument.pl)** (`wygenerujdokument.pl`).
 
-To repozytorium służy wyłącznie do zbierania zgłoszeń o:
+To repozytorium **nie zawiera kodu aplikacji**. Służy do zbierania:
 
-- błędach w generatorze lub na stronie,
+- błędów w generatorze lub na stronie,
 - nieaktualnej albo niepoprawnej treści dokumentów / poradników,
-- innych usterkach widocznych dla użytkownika.
+- pomysłów na nowe dokumenty, ulepszenia i inne sugestie.
 
-## Jak zgłosić problem
+## Jak zgłosić
 
-1. Otwórz [nowe zgłoszenie](https://github.com/vortxdev/idox-reports/issues/new?template=problem.yml) (albo użyj linku **Zgłoś problem** w serwisie).
-2. Uzupełnij opis. Adres strony i nazwa dokumentu są często wstępnie wypełnione.
+1. Otwórz [nowe zgłoszenie](https://github.com/vortxdev/idox-feedback/issues/new?template=zgloszenie.yml) (albo użyj linku **Zgłoś uwagi** w serwisie).
+2. Wybierz rodzaj zgłoszenia (problem, nieaktualna treść, pomysł itd.) i uzupełnij opis. Adres strony oraz nazwa dokumentu są często wstępnie wypełnione.
 3. **Nie wklejaj** danych z formularza, treści wygenerowanego PDF ani zbędnych danych osobowych.
 
 Zgłoszenie powstaje dopiero po Twoim kliknięciu w GitHubie — serwis nie wysyła formularzy ani PDF-ów automatycznie.

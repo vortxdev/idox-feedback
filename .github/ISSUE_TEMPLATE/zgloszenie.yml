@@ -1,0 +1,49 @@
+name: Zgłoszenie uwagi lub pomysłu
+description: Błąd, nieaktualna treść, pomysł na ulepszenie albo inna uwaga do serwisu
+title: "[Zgłoszenie]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie.
+
+        Możesz zgłosić **problem**, **nieaktualną treść** albo **pomysł** na ulepszenie.
+
+        **Nie wklejaj** danych wpisanych w formularzu, treści wygenerowanego PDF ani danych osobowych, jeżeli nie są konieczne do opisania sprawy.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Rodzaj zgłoszenia
+      description: Wybierz to, co najlepiej pasuje. Jeśli nie jesteś pewien — wybierz „Inne”.
+      options:
+        - Błąd lub problem techniczny
+        - Nieaktualna lub niepoprawna treść / przepis
+        - Pomysł na ulepszenie lub nowy dokument
+        - Inne
+    validations:
+      required: true
+  - type: input
+    id: page_url
+    attributes:
+      label: Adres strony
+      description: Strona, której dotyczy zgłoszenie (bez parametrów z danymi formularza). Przy ogólnym pomyśle możesz podać stronę główną.
+      placeholder: https://wygenerujdokument.pl/kreator/...
+    validations:
+      required: true
+  - type: input
+    id: document_name
+    attributes:
+      label: Nazwa dokumentu
+      description: Wypełniane automatycznie na stronach kreatora; poza nimi możesz zostawić puste.
+      placeholder: np. Wniosek urlopowy
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Opis
+      description: Co jest nie tak, czego oczekiwałeś, albo jaki masz pomysł?
+      placeholder: Opisz sprawę możliwie konkretnie…
+    validations:
+      required: true
