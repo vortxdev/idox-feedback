@@ -2,7 +2,7 @@
 
 Publiczne zgłoszenia problemów serwisu **[Wygeneruj Dokument](https://wygenerujdokument.pl)** (`wygenerujdokument.pl`).
 
-To repozytorium **nie zawiera kodu aplikacji**. Służy wyłącznie do zbierania zgłoszeń o:
+To repozytorium służy wyłącznie do zbierania zgłoszeń o:
 
 - błędach w generatorze lub na stronie,
 - nieaktualnej albo niepoprawnej treści dokumentów / poradników,
